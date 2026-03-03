@@ -5,6 +5,8 @@ import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport } from "ai"
 import { MessageCircle, X, Send, Clock, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
 
 const transport = new DefaultChatTransport({ api: "/api/chat" })
 
@@ -29,8 +31,8 @@ export function ChatbotWidget() {
   }
 
   const quickQuestions = [
-    "Quelle destination recommandez-vous ?",
-    "Parlez-moi de l'Egypte Antique",
+    "Quelle destination choisir parmi celles mises en avant ?",
+    "Parlez-moi de Paris",
     "Quels sont les tarifs ?",
   ]
 
@@ -117,7 +119,13 @@ export function ChatbotWidget() {
                 >
                   {message.parts.map((part, index) => {
                     if (part.type === "text") {
-                      return <span key={index}>{part.text}</span>
+                      return (
+                        <div key={index} className="prose prose-sm text-foreground">
+                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                            {part.text}
+                          </ReactMarkdown>
+                        </div>
+                      )
                     }
                     return null
                   })}
@@ -131,7 +139,7 @@ export function ChatbotWidget() {
                   <div className="flex items-center gap-2 rounded-2xl rounded-bl-md bg-secondary px-4 py-3">
                     <Loader2 className="h-3.5 w-3.5 animate-spin text-primary" />
                     <span className="text-xs text-muted-foreground">
-                      Chronos reflechit...
+                      Chronos réfléchit...
                     </span>
                   </div>
                 </div>
