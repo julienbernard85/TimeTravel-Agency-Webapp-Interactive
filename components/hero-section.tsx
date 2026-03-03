@@ -59,12 +59,12 @@ export function HeroSection() {
           <span className="text-balance">
             Traversez les
             <br />
-            <span className="text-gold-gradient">Epoques</span>
+            <span className="text-gold-gradient">Époques</span>
           </span>
         </h1>
         <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
           {
-            "Explorez l'Egypte antique, vivez la Renaissance italienne ou decouvrez les merveilles du futur. Chaque epoque devient votre destination."
+            "Explorez l'Egypte antique, vivez la Renaissance italienne ou découvrez les merveilles du futur. Chaque époque devient votre destination."
           }
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
@@ -74,14 +74,6 @@ export function HeroSection() {
             asChild
           >
             <a href="#destinations">Explorer les Destinations</a>
-          </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-border/50 text-foreground hover:bg-secondary hover:text-secondary-foreground px-10 py-6 text-sm tracking-widest uppercase"
-            asChild
-          >
-            <a href="#preferences">Personnaliser</a>
           </Button>
         </div>
       </div>

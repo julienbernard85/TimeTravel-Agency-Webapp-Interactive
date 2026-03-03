@@ -47,11 +47,11 @@ export function DestinationCards() {
             Nos Destinations
           </p>
           <h2 className="mb-6 font-serif text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl text-balance">
-            Choisissez Votre Epoque
+            Choisissez Votre Époque
           </h2>
           <p className="mx-auto max-w-2xl text-lg leading-relaxed text-muted-foreground">
             {
-              "Trois destinations d'exception, soigneusement selectionnees pour vous offrir une experience hors du temps."
+              "Trois destinations d'exception, soigneusement sélectionnées pour vous offrir une expérience hors du temps."
             }
           </p>
         </div>
