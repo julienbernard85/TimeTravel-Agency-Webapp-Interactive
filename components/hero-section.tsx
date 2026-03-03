@@ -64,7 +64,7 @@ export function HeroSection() {
         </h1>
         <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-muted-foreground md:text-xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
           {
-            "Explorez l'Egypte antique, vivez la Renaissance italienne ou découvrez les merveilles du futur. Chaque époque devient votre destination."
+            "Chaque époque devient votre destination."
           }
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-500">
