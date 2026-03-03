@@ -99,6 +99,7 @@ cp .env.example .env.local
 
 # 4. Configuration du chatbot
 npm install @ai-sdk/groq 
+npm install react-markdown remark-gfm
 
 # 4. Lancer le serveur de développement
 pnpm dev
