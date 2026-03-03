@@ -19,40 +19,6 @@ export function Footer() {
               }
             </p>
           </div>
-
-          {/* Links */}
-          <div>
-            <h4 className="mb-4 text-sm tracking-[0.2em] uppercase text-primary">
-              Navigation
-            </h4>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <a
-                  href="#destinations"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Destinations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Securite Temporelle
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div>
             <h4 className="mb-4 text-sm tracking-[0.2em] uppercase text-primary">
