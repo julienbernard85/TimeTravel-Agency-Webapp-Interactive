@@ -25,12 +25,6 @@ export function Navbar() {
             Destinations
           </a>
           <a
-            href="#preferences"
-            className="text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary"
-          >
-            Personnaliser
-          </a>
-          <a
             href="#about"
             className="text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary"
           >
@@ -62,13 +56,6 @@ export function Navbar() {
               onClick={() => setIsOpen(false)}
             >
               Destinations
-            </a>
-            <a
-              href="#preferences"
-              className="text-sm tracking-widest uppercase text-muted-foreground transition-colors hover:text-primary"
-              onClick={() => setIsOpen(false)}
-            >
-              Personnaliser
             </a>
             <a
               href="#about"

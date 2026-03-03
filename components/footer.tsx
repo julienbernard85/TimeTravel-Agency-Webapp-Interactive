@@ -15,7 +15,7 @@ export function Footer() {
             </div>
             <p className="max-w-sm text-sm leading-relaxed text-muted-foreground">
               {
-                "Depuis 2089, TimeTravel Agency repousse les frontieres du possible. Nous vous offrons l'experience ultime : voyager dans le temps avec elegance et securite."
+                "Depuis 2089, TimeTravel Agency repousse les frontières du possible. Nous vous offrons l'expérience ultime : voyager dans le temps avec élégance et sécurité."
               }
             </p>
           </div>
@@ -32,14 +32,6 @@ export function Footer() {
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   Destinations
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#preferences"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Personnaliser
                 </a>
               </li>
               <li>

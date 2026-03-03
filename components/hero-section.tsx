@@ -75,14 +75,6 @@ export function HeroSection() {
           >
             <a href="#destinations">Explorer les Destinations</a>
           </Button>
-          <Button
-            size="lg"
-            variant="outline"
-            className="border-border/50 text-foreground hover:bg-secondary hover:text-secondary-foreground px-10 py-6 text-sm tracking-widest uppercase"
-            asChild
-          >
-            <a href="#preferences">Personnaliser</a>
-          </Button>
         </div>
       </div>
 
