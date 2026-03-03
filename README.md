@@ -57,7 +57,7 @@
   - 🦕 Époque Crétacée (-65 Millions av. J.-C.)
   - 🎨 Florence Renaissance (1504 apr. J.-C.)
 - **Section de personnalisation** — Sélection des centres d'intérêt (Histoire, Art & Culture, Aventure, Technologie), de l'époque souhaitée et du niveau de confort (Essentiel / Premium / Impérial).
-- **Chatbot IA "Chronos"** — Widget flottant avec historique de conversation en streaming temps réel. L'assistant connaît les trois destinations, les tarifs et guide les clients vers le voyage idéal.
+- **Chatbot IA** — Widget flottant avec historique de conversation en streaming temps réel via **Groq**. L'assistant connaît les trois destinations, les tarifs et guide les clients vers le voyage idéal.
 - **Questions rapides** — Suggestions de questions prédéfinies pour démarrer la conversation.
 - **Design responsive** — Interface adaptée mobile et desktop.
 - **Thème sombre** — UI complète en dark mode.
@@ -70,10 +70,10 @@
 | Usage | Outil / Modèle | Rôle |
 |---|---|---|
 | Assistance au développement | GitHub Copilot | Génération et complétion de code |
-| Chatbot conversationnel | GPT (via Vercel AI SDK) — modèle `openai/gpt-5-mini` | Assistant "Chronos" en temps réel |
-| Prompt système | Rédigé manuellement | Personnalité, règles et connaissances de Chronos |
+| Chatbot conversationnel | [Groq](https://groq.com/) (via Vercel AI SDK) | Assistant IA en temps réel |
+| Prompt système | Rédigé manuellement | Personnalité, règles et connaissances de l'assistant |
 
-> **Transparence** : Le chatbot "Chronos" est animé par un Large Language Model. Toutes les réponses sont générées automatiquement. Le projet est fictif et ne propose aucun vrai service commercial.
+> **Transparence** : Le chatbot est animé par un modèle hébergé sur Groq via le Vercel AI SDK. Toutes les réponses sont générées automatiquement. Le projet est fictif et ne propose aucun vrai service commercial.
 
 ---
 
@@ -97,6 +97,9 @@ pnpm install
 # 3. Configurer les variables d'environnement (voir section suivante)
 cp .env.example .env.local
 
+# 4. Configuration du chatbot
+npm install @ai-sdk/groq 
+
 # 4. Lancer le serveur de développement
 pnpm dev
 ```
@@ -119,11 +122,11 @@ pnpm lint     # Vérification ESLint
 Créer un fichier `.env.local` à la racine du projet :
 
 ```env
-# Clé API OpenAI (requise pour le chatbot Chronos)
-OPENAI_API_KEY=sk-...
+# Clé API Groq (requise pour le chatbot)
+GROQ_API_KEY=gsk_...
 ```
 
-> Sans cette clé, le chatbot ne fonctionnera pas. Obtenir une clé sur [platform.openai.com](https://platform.openai.com/).
+> Sans cette clé, le chatbot ne fonctionnera pas. Obtenir une clé gratuite sur [console.groq.com](https://console.groq.com/).
 
 ---
 
@@ -135,7 +138,7 @@ OPENAI_API_KEY=sk-...
 | Vidéo hero (`Videos_les_3_epoques.mp4`) | Produite pour le projet |
 | Bibliothèque de composants | [shadcn/ui](https://ui.shadcn.com/) — MIT License |
 | Icônes | [Lucide React](https://lucide.dev/) — ISC License |
-| Modèle IA | OpenAI GPT — [Conditions d'utilisation OpenAI](https://openai.com/policies/terms-of-use) |
+| Modèle IA | [Groq](https://groq.com/) — [Conditions d'utilisation Groq](https://groq.com/terms-of-service/) |
 | Vercel AI SDK | [sdk.vercel.ai](https://sdk.vercel.ai/) — Apache 2.0 |
 
 ---
